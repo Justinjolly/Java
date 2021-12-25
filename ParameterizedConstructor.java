@@ -8,15 +8,17 @@
 class Students{
 	int rollNumber;
 	String name;
-	Students(int rollNumber,String name){
+	Students(int rollNumber,String name){//parameterized Constructor
 		this.rollNumber=rollNumber;
 		this.name=name;
 	}
 }
 public class ParameterizedConstructor {
 	public static void main(String[] args) {
-		Students r = new Students(1," Justin"); 
-		System.out.println(" "+r.rollNumber + r.name);
+		Students r1 = new Students(1," Justin");
+		Students r2 = new Students(2," Suresh");
+		System.out.println(" "+r1.rollNumber + r1.name);
+		System.out.println(" "+r2.rollNumber + r2.name);
 	}
 
 }
